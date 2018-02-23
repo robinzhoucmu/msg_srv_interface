@@ -11,5 +11,5 @@ uint16 x2
 uint16 y2
 # Confidence score for the bounding box
 float32 score
-# mask vectorized per row from a 28*28 2d array
-float32[] mask
+# Images of masks with mono8 encoding 
+sensor_msgs/Image mask

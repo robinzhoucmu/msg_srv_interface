@@ -18,7 +18,7 @@ find_package(genmsg REQUIRED)
 include_directories(${catkin_INCLUDE_DIRS})
 add_message_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} FILES box_mask.msg detection_frame.msg)
 # Do code generation, specifying which other message packages we depend on.
-generate_messages(DEPENDENCIES std_msgs)
+generate_messages(DEPENDENCIES std_msgs sensor_msgs)
 
 # Build an executable that uses our messages, making it depend on the
 # message-generation step.
